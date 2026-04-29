@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idaxs xmlns="http://ida.loni.usc.edu" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="/xsds/idaxs_2_0.xsd">
+<project xmlns="">
+ <projectIdentifier>ADNI</projectIdentifier>
+ <projectDescription>Alzheimer&#039;s Disease Neuroimaging Initiative</projectDescription>
+ <siteKey>024</siteKey>
+ <subject>
+  <subjectIdentifier>024_S_1063</subjectIdentifier>
+  <researchGroup>CN</researchGroup>
+  <subjectSex>F</subjectSex>
+  <subjectInfo item="APOE A1">3</subjectInfo>
+  <subjectInfo item="APOE A2">4</subjectInfo>
+  <visit>
+   <visitIdentifier>ADNI Screening</visitIdentifier>
+   <assessment name="MMSE">
+    <component name="MMSE Total Score">
+     <assessmentScore attribute="MMSCORE">29.0</assessmentScore>
+    </component>
+   </assessment>
+   <assessment name="GDSCALE">
+    <component name="GDS Total Score">
+     <assessmentScore attribute="GDTOTAL">0.0</assessmentScore>
+    </component>
+   </assessment>
+   <assessment name="CDR">
+    <component name="CDR Total Score">
+     <assessmentScore attribute="CDGLOBAL">0.0</assessmentScore>
+    </component>
+   </assessment>
+  </visit>
+  <study>
+   <studyIdentifier>5674</studyIdentifier>
+   <subjectAge>78.4685</subjectAge>
+   <ageQualifier>Y</ageQualifier>
+   <weightKg>77.11</weightKg>
+   <postMortem>F</postMortem>
+   <series>
+    <seriesIdentifier>21525</seriesIdentifier>
+    <modality>MRI</modality>
+    <dateAcquired>2006-10-31</dateAcquired>
+    <seriesLevelMeta>
+     <annotation>
+      <text>Normalized MPRAGE to be used with the BEaST brain extraction software</text>
+     </annotation>
+     <derivedProduct>
+      <imageUID>336333</imageUID>
+      <processedDataLabel>BEaST normalized MPRAGE</processedDataLabel>
+      <imageType>image volume</imageType>
+      <tissue>All</tissue>
+      <hemisphere>Both</hemisphere>
+      <anatomicStructure>Brain</anatomicStructure>
+      <registration>MNI152</registration>
+      <relatedImage>
+       <imageUID>63392</imageUID>
+       <relation>derived from</relation>
+      </relatedImage>
+      <provenanceDetail>
+       <step>1</step>
+       <process>Intensity Normalization</process>
+       <package>N3</package>
+       <program>nu_correct</program>
+       <programVersion>1.12.0</programVersion>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <platform>linux</platform>
+       <operatingSystem>Debian 5.0</operatingSystem>
+      </provenanceDetail>
+      <provenanceDetail>
+       <step>2</step>
+       <process>Spatial Normalization</process>
+       <package>mni_autoreg</package>
+       <program>mritotal</program>
+       <programVersion>0.99.6</programVersion>
+       <programParams>target=mni_icbm152_t1_tal_nlin_sym_09c.mnc</programParams>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <platform>linux</platform>
+       <operatingSystem>Debian 5.0</operatingSystem>
+      </provenanceDetail>
+      <provenanceDetail>
+       <step>3</step>
+       <process>Intensity Normalization</process>
+       <package>MINC</package>
+       <program>volume_pol</program>
+       <programVersion>1.1</programVersion>
+       <programParams>--order 1 --min 0 --max 100 --noclamp</programParams>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <platform>linux</platform>
+       <operatingSystem>Debian 5.0</operatingSystem>
+      </provenanceDetail>
+      <creationDate>2000-01-01</creationDate>
+      <processingInstitution>Montreal Neurological Institute</processingInstitution>
+     </derivedProduct>
+     <relatedImageDetail>
+      <processedRelatedImage>
+       <derivedProduct>
+        <imageUID>63392</imageUID>
+        <processedDataLabel>MPR-R; GradWarp; B1 Correction; N3; Scaled</processedDataLabel>
+        <imageType>image volume</imageType>
+        <tissue>All</tissue>
+        <hemisphere>Both</hemisphere>
+        <anatomicStructure>Brain</anatomicStructure>
+        <registration>native</registration>
+        <relatedImage>
+         <imageUID>28110</imageUID>
+         <relation>derived from</relation>
+        </relatedImage>
+        <provenanceDetail>
+         <step>1</step>
+         <process>GradWarp</process>
+         <package>UCSD ADNI Pipeline</package>
+         <program>proc_ADNI_script</program>
+         <programVersion>0.2</programVersion>
+         <timestamp>2007-05-21T09:41:04</timestamp>
+         <platform>Linux</platform>
+         <operatingSystem>2.6.9-34.0.1.EL</operatingSystem>
+        </provenanceDetail>
+        <provenanceDetail>
+         <step>2</step>
+         <process>B1 Correction</process>
+         <package>UCSD ADNI Pipeline</package>
+         <program>proc_ADNI_script</program>
+         <programVersion>0.2</programVersion>
+         <timestamp>2007-05-21T09:41:04</timestamp>
+         <platform>Linux</platform>
+         <operatingSystem>2.6.9-34.0.1.EL</operatingSystem>
+        </provenanceDetail>
+        <provenanceDetail>
+         <step>3</step>
+         <process>ADNI Pipeline</process>
+         <package>N3</package>
+         <program>nu_correct</program>
+         <programVersion>1.3</programVersion>
+         <timestamp>2007-05-21T13:12:13</timestamp>
+         <platform>Linux</platform>
+         <operatingSystem>2.4.21-32.0.1.EL</operatingSystem>
+        </provenanceDetail>
+        <provenanceDetail>
+         <step>4</step>
+         <process>Scaled</process>
+         <program>scale_nii</program>
+         <programVersion>1.1</programVersion>
+         <programParams>scale=1.001765,0.996257,1.007279</programParams>
+         <timestamp>2007-07-31T14:58:20</timestamp>
+         <platform>Linux</platform>
+         <operatingSystem>2.4.21-32.0.1.EL</operatingSystem>
+        </provenanceDetail>
+        <creationDate>2000-01-01</creationDate>
+        <imageRating>
+         <ratingDescription>1</ratingDescription>
+         <value>1</value>
+        </imageRating>
+       </derivedProduct>
+      </processedRelatedImage>
+     </relatedImageDetail>
+    </seriesLevelMeta>
+   </series>
+  </study>
+ </subject>
+</project>
+</idaxs>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idaxs xmlns="http://ida.loni.usc.edu" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="/xsds/idaxs_2_0.xsd">
+<project xmlns="">
+ <projectIdentifier>ADNI</projectIdentifier>
+ <projectDescription>Alzheimer&#039;s Disease Neuroimaging Initiative</projectDescription>
+ <siteKey>129</siteKey>
+ <subject>
+  <subjectIdentifier>129_S_4369</subjectIdentifier>
+  <researchGroup>CN</researchGroup>
+  <subjectSex>M</subjectSex>
+  <subjectInfo item="APOE A1">3</subjectInfo>
+  <subjectInfo item="APOE A2">3</subjectInfo>
+  <visit>
+   <visitIdentifier>ADNI2 Baseline-New Pt</visitIdentifier>
+   <assessment name="Functional Assessment Questionnaire">
+    <component name="FAQ Total score">
+     <assessmentScore attribute="FAQTOTAL">0.0</assessmentScore>
+    </component>
+   </assessment>
+  </visit>
+  <study>
+   <studyIdentifier>40577</studyIdentifier>
+   <subjectAge>68.4603</subjectAge>
+   <ageQualifier>Y</ageQualifier>
+   <weightKg>112.7631</weightKg>
+   <postMortem>F</postMortem>
+   <series>
+    <seriesIdentifier>132387</seriesIdentifier>
+    <modality>PET</modality>
+    <dateAcquired>2011-12-08</dateAcquired>
+    <seriesLevelMeta>
+     <derivedProduct>
+      <imageUID>271488</imageUID>
+      <processedDataLabel>AV45 Coreg, Avg, Standardized Image and Voxel Size</processedDataLabel>
+      <imageType>image volume</imageType>
+      <tissue>All</tissue>
+      <hemisphere>Both</hemisphere>
+      <anatomicStructure>Brain</anatomicStructure>
+      <registration>AC-PC</registration>
+      <relatedImage>
+       <imageUID>270843</imageUID>
+       <relation>derived from</relation>
+      </relatedImage>
+      <provenanceDetail>
+       <step>1</step>
+       <process>Smooth</process>
+       <package>XIDA</package>
+       <program>cvt_ext_smooth</program>
+       <programVersion>1</programVersion>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <platform>Mac OS X</platform>
+       <operatingSystem>darwin</operatingSystem>
+      </provenanceDetail>
+      <provenanceDetail>
+       <step>2</step>
+       <process>Calculate Coregistration</process>
+       <package>NeuroStat</package>
+       <program>mcoreg</program>
+       <programVersion>3.7</programVersion>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <platform>Mac OS X</platform>
+       <operatingSystem>darwin</operatingSystem>
+      </provenanceDetail>
+      <provenanceDetail>
+       <step>3</step>
+       <process>Apply Coregistration</process>
+       <package>NeuroStat</package>
+       <program>coregimg</program>
+       <programVersion>3.4</programVersion>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <platform>Mac OS X</platform>
+       <operatingSystem>darwin</operatingSystem>
+      </provenanceDetail>
+      <provenanceDetail>
+       <step>4</step>
+       <process>Average Frames</process>
+       <package>XIDA</package>
+       <program>ave_sep_frames</program>
+       <programVersion>1</programVersion>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <platform>Mac OS X</platform>
+       <operatingSystem>darwin</operatingSystem>
+      </provenanceDetail>
+      <provenanceDetail>
+       <step>5</step>
+       <process>AC-PC Orient Baseline FDG</process>
+       <package>NeuroStat</package>
+       <program>stereo</program>
+       <programVersion>6.6</programVersion>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <platform>Mac OS X</platform>
+       <operatingSystem>darwin</operatingSystem>
+      </provenanceDetail>
+      <provenanceDetail>
+       <step>6</step>
+       <process>Standardize to Baseline FDG</process>
+       <package>NeuroStat</package>
+       <program>coreg</program>
+       <programVersion>3.5</programVersion>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <platform>Mac OS X</platform>
+       <operatingSystem>darwin</operatingSystem>
+      </provenanceDetail>
+      <provenanceDetail>
+       <step>7</step>
+       <process>Average Frames</process>
+       <package>XIDA</package>
+       <program>ave_sep_frames</program>
+       <programVersion>1</programVersion>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <platform>Mac OS X</platform>
+       <operatingSystem>darwin</operatingSystem>
+      </provenanceDetail>
+      <provenanceDetail>
+       <step>8</step>
+       <process>Intensity Normalization to Cerebellar Gray Matter</process>
+       <package>XIDA</package>
+       <program>ImageNormalize</program>
+       <programVersion>1</programVersion>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <platform>Mac OS X</platform>
+       <operatingSystem>darwin</operatingSystem>
+      </provenanceDetail>
+      <creationDate>2000-01-01</creationDate>
+      <processingInstitution>University of Michigan</processingInstitution>
+     </derivedProduct>
+     <relatedImageDetail>
+      <originalRelatedImage>
+       <imageUID>270843</imageUID>
+       <description> 3D 4x300s 4i/16s  AV45</description>
+       <protocolTerm>
+        <protocol term="Manufacturer">Siemens/CTI</protocol>
+        <protocol term="Mfg Model">HR+</protocol>
+        <protocol term="Radiopharmaceutical">18F-AV45</protocol>
+        <protocol term="Number of Rows">128.0</protocol>
+        <protocol term="Number of Columns">128.0</protocol>
+        <protocol term="Number of Slices">63.0</protocol>
+        <protocol term="Frames">4.0</protocol>
+        <protocol term="Pixel Spacing X">2.57426</protocol>
+        <protocol term="Pixel Spacing Y">2.57426</protocol>
+        <protocol term="Slice Thickness">2.425</protocol>
+        <protocol term="Convolution Kernel">ramp</protocol>
+        <protocol term="Counts Source">Dynamic emission</protocol>
+        <protocol term="Randoms Correction"/>
+        <protocol term="Attenuation Correction">Measured</protocol>
+        <protocol term="Decay Correction">Start</protocol>
+        <protocol term="Reconstruction">CPU terative</protocol>
+        <protocol term="Scatter Correction">Simulated 3D</protocol>
+        <protocol term="Radioisotope">F-18</protocol>
+       </protocolTerm>
+      </originalRelatedImage>
+     </relatedImageDetail>
+    </seriesLevelMeta>
+   </series>
+  </study>
+ </subject>
+</project>
+</idaxs>

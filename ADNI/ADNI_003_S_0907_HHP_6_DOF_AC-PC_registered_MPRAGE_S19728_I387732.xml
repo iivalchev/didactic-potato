@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idaxs xmlns="http://ida.loni.usc.edu" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="/xsds/idaxs_2_0.xsd">
+<project xmlns="">
+ <projectIdentifier>ADNI</projectIdentifier>
+ <projectDescription>Alzheimer&#039;s Disease Neuroimaging Initiative</projectDescription>
+ <siteKey>003</siteKey>
+ <subject>
+  <subjectIdentifier>003_S_0907</subjectIdentifier>
+  <researchGroup>CN</researchGroup>
+  <subjectSex>F</subjectSex>
+  <subjectInfo item="APOE A1">3</subjectInfo>
+  <subjectInfo item="APOE A2">3</subjectInfo>
+  <visit>
+   <visitIdentifier>ADNI Screening</visitIdentifier>
+   <assessment name="MMSE">
+    <component name="MMSE Total Score">
+     <assessmentScore attribute="MMSCORE">30.0</assessmentScore>
+    </component>
+   </assessment>
+   <assessment name="GDSCALE">
+    <component name="GDS Total Score">
+     <assessmentScore attribute="GDTOTAL">0.0</assessmentScore>
+    </component>
+   </assessment>
+   <assessment name="CDR">
+    <component name="CDR Total Score">
+     <assessmentScore attribute="CDGLOBAL">0.0</assessmentScore>
+    </component>
+   </assessment>
+  </visit>
+  <study>
+   <studyIdentifier>5356</studyIdentifier>
+   <subjectAge>88.7534</subjectAge>
+   <ageQualifier>Y</ageQualifier>
+   <weightKg>52.16</weightKg>
+   <postMortem>F</postMortem>
+   <series>
+    <seriesIdentifier>19728</seriesIdentifier>
+    <modality>MRI</modality>
+    <dateAcquired>2006-09-11</dateAcquired>
+    <seriesLevelMeta>
+     <annotation>
+      <text>3D images have been aligned along the line passing through the anterior and posterior commissures of the brain (AC-PC line) using a six-parameter linear registration from the Montreal Neurological Institute (MNI) package AutoReg (version 0.98v) (www.bic.mni.mcgill.ca) and the MNI ICBM152 Nonlinear Symmetric template with 1x1x1mm voxel dimensions as the reference. Resampling was carried out with a linear transformation in AutoReg. Specific AutoReg steps: 1) minctracc âlsq6 âmi XX.mnc TEMPLATE_USED.mnc YY.xfm 2) mincresample âtransformation YY.xfm âlike TEMPLATE_USED.mnc XX.mnc XX_ACPC.mnc</text>
+     </annotation>
+     <derivedProduct>
+      <imageUID>387732</imageUID>
+      <processedDataLabel>HHP 6 DOF AC-PC registered MPRAGE</processedDataLabel>
+      <imageType>image volume</imageType>
+      <tissue>All</tissue>
+      <hemisphere>Both</hemisphere>
+      <anatomicStructure>Brain</anatomicStructure>
+      <registration>MNI152</registration>
+      <relatedImage>
+       <imageUID>25737</imageUID>
+       <relation>derived from</relation>
+      </relatedImage>
+      <provenanceDetail>
+       <step>1</step>
+       <process>Calculate Coregistration</process>
+       <package>mni_autoreg</package>
+       <program>minctracc</program>
+       <programParams>-lsq 6</programParams>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <operatingSystem>IRIX</operatingSystem>
+      </provenanceDetail>
+      <provenanceDetail>
+       <step>2</step>
+       <process>Apply Coregistration</process>
+       <package>mni_autoreg</package>
+       <program>mincresample</program>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <operatingSystem>IRIX</operatingSystem>
+      </provenanceDetail>
+      <provenanceDetail>
+       <step>3</step>
+       <process>File Format Conversion</process>
+       <program>mnc2nii</program>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <operatingSystem>GNU Linux</operatingSystem>
+      </provenanceDetail>
+      <creationDate>2000-01-01</creationDate>
+      <processingInstitution>LENITEM, IRCCS Fatebenefratelli - Brescia (ITALY)</processingInstitution>
+     </derivedProduct>
+     <relatedImageDetail>
+      <originalRelatedImage>
+       <imageUID>25737</imageUID>
+       <description>MPRAGE</description>
+       <protocolTerm>
+        <protocol term="Acquisition Type">3D</protocol>
+        <protocol term="Weighting">T1</protocol>
+        <protocol term="Pulse Sequence">IR/GR</protocol>
+        <protocol term="Slice Thickness">1.2</protocol>
+        <protocol term="TE">3.61</protocol>
+        <protocol term="TR">3000.0</protocol>
+        <protocol term="TI">1000.0</protocol>
+        <protocol term="Coil">PA</protocol>
+        <protocol term="Flip Angle">8.0</protocol>
+        <protocol term="Acquisition Plane">SAGITTAL</protocol>
+        <protocol term="Matrix X">192.0</protocol>
+        <protocol term="Matrix Y">192.0</protocol>
+        <protocol term="Matrix Z">160.0</protocol>
+        <protocol term="Pixel Spacing X">1.25</protocol>
+        <protocol term="Pixel Spacing Y">1.25</protocol>
+        <protocol term="Manufacturer">SIEMENS</protocol>
+        <protocol term="Mfg Model">Symphony</protocol>
+        <protocol term="Field Strength">1.494</protocol>
+       </protocolTerm>
+       <imageRating>
+        <ratingDescription>1</ratingDescription>
+        <value>1</value>
+       </imageRating>
+      </originalRelatedImage>
+     </relatedImageDetail>
+    </seriesLevelMeta>
+   </series>
+  </study>
+ </subject>
+</project>
+</idaxs>

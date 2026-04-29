@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idaxs xmlns="http://ida.loni.usc.edu" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="/xsds/idaxs_2_0.xsd">
+<project xmlns="">
+ <projectIdentifier>ADNI</projectIdentifier>
+ <projectDescription>Alzheimer&#039;s Disease Neuroimaging Initiative</projectDescription>
+ <siteKey>023</siteKey>
+ <subject>
+  <subjectIdentifier>023_S_4501</subjectIdentifier>
+  <researchGroup>AD</researchGroup>
+  <subjectSex>M</subjectSex>
+  <subjectInfo item="APOE A1">3</subjectInfo>
+  <subjectInfo item="APOE A2">4</subjectInfo>
+  <visit>
+   <visitIdentifier>ADNI2 Screening MRI-New Pt</visitIdentifier>
+  </visit>
+  <study>
+   <studyIdentifier>43904</studyIdentifier>
+   <subjectAge>79.0877</subjectAge>
+   <ageQualifier>Y</ageQualifier>
+   <weightKg>75.2963</weightKg>
+   <postMortem>F</postMortem>
+   <series>
+    <seriesIdentifier>144529</seriesIdentifier>
+    <modality>MRI</modality>
+    <dateAcquired>2012-03-22</dateAcquired>
+    <seriesLevelMeta>
+     <annotation>
+      <text>Grinder Pipeline</text>
+     </annotation>
+     <derivedProduct>
+      <imageUID>293686</imageUID>
+      <processedDataLabel>MT1; GradWarp; N3m</processedDataLabel>
+      <imageType>image volume</imageType>
+      <tissue>All</tissue>
+      <hemisphere>Both</hemisphere>
+      <anatomicStructure>Brain</anatomicStructure>
+      <registration>native</registration>
+      <relatedImage>
+       <imageUID>291854</imageUID>
+       <relation>derived from</relation>
+      </relatedImage>
+      <provenanceDetail>
+       <step>1</step>
+       <process>Gradient Unwarping</process>
+       <package>Grinder Pipeline</package>
+       <program>nifti_unwarp_resample</program>
+       <programVersion>1.0</programVersion>
+       <timestamp>2012-03-22T20:12:54</timestamp>
+       <platform>Linux</platform>
+       <operatingSystem>2.6.18-164.el5</operatingSystem>
+      </provenanceDetail>
+      <provenanceDetail>
+       <step>2</step>
+       <process>N3m</process>
+       <package>Grinder Pipeline</package>
+       <program>brain_extraction2</program>
+       <programVersion>2.04</programVersion>
+       <timestamp>2012-03-22T20:44:30</timestamp>
+       <platform>Linux</platform>
+       <operatingSystem>2.6.18-164.el5</operatingSystem>
+      </provenanceDetail>
+      <creationDate>2000-01-01</creationDate>
+     </derivedProduct>
+     <relatedImageDetail>
+      <originalRelatedImage>
+       <imageUID>291854</imageUID>
+       <description>MPRAGE GRAPPA2</description>
+       <protocolTerm>
+        <protocol term="Acquisition Type">3D</protocol>
+        <protocol term="Weighting">T1</protocol>
+        <protocol term="Pulse Sequence">GR/IR</protocol>
+        <protocol term="Slice Thickness">1.2</protocol>
+        <protocol term="TE">2.95</protocol>
+        <protocol term="TR">2300.0</protocol>
+        <protocol term="TI">900.0</protocol>
+        <protocol term="Coil">PA</protocol>
+        <protocol term="Flip Angle">9.0</protocol>
+        <protocol term="Acquisition Plane">SAGITTAL</protocol>
+        <protocol term="Matrix X">240.0</protocol>
+        <protocol term="Matrix Y">256.0</protocol>
+        <protocol term="Matrix Z">176.0</protocol>
+        <protocol term="Pixel Spacing X">1.05469</protocol>
+        <protocol term="Pixel Spacing Y">1.05469</protocol>
+        <protocol term="Manufacturer">SIEMENS</protocol>
+        <protocol term="Mfg Model">TrioTim</protocol>
+        <protocol term="Field Strength">3.0</protocol>
+       </protocolTerm>
+      </originalRelatedImage>
+     </relatedImageDetail>
+    </seriesLevelMeta>
+   </series>
+  </study>
+ </subject>
+</project>
+</idaxs>

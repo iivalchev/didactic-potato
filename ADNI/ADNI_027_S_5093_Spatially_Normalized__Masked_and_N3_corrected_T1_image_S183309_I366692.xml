@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idaxs xmlns="http://ida.loni.usc.edu" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="/xsds/idaxs_2_0.xsd">
+<project xmlns="">
+ <projectIdentifier>ADNI</projectIdentifier>
+ <projectDescription>Alzheimer&#039;s Disease Neuroimaging Initiative</projectDescription>
+ <siteKey>027</siteKey>
+ <subject>
+  <subjectIdentifier>027_S_5093</subjectIdentifier>
+  <researchGroup>CN</researchGroup>
+  <subjectSex>F</subjectSex>
+  <subjectInfo item="APOE A1">3</subjectInfo>
+  <subjectInfo item="APOE A2">3</subjectInfo>
+  <visit>
+   <visitIdentifier>ADNI2 Screening MRI-New Pt</visitIdentifier>
+  </visit>
+  <study>
+   <studyIdentifier>57109</studyIdentifier>
+   <subjectAge>69.4247</subjectAge>
+   <ageQualifier>Y</ageQualifier>
+   <weightKg>73.48</weightKg>
+   <postMortem>F</postMortem>
+   <series>
+    <seriesIdentifier>183309</seriesIdentifier>
+    <modality>MRI</modality>
+    <dateAcquired>2013-02-27</dateAcquired>
+    <seriesLevelMeta>
+     <annotation>
+      <text> Images are registered to a downsampled version of the Colins brain. The Colin27 brain is skull stripped and zeropadded to have a cubic isotropic image size  (220x220x220 1mm^3) and downsampled (110x110x110 2mm^3) to be more similar to the DWI resolution. masking that did not look optimal with FreeSurfer was edited manully </text>
+     </annotation>
+     <derivedProduct>
+      <imageUID>366692</imageUID>
+      <processedDataLabel>Spatially Normalized, Masked and N3 corrected T1 image</processedDataLabel>
+      <imageType>image volume</imageType>
+      <tissue>All</tissue>
+      <hemisphere>Both</hemisphere>
+      <anatomicStructure>Brain</anatomicStructure>
+      <registration>Colin27</registration>
+      <relatedImage>
+       <imageUID>361517</imageUID>
+       <relation>derived from</relation>
+      </relatedImage>
+      <provenanceDetail>
+       <step>1</step>
+       <process>Mask</process>
+       <package>FreeSurfer</package>
+       <program>recon-all</program>
+       <programVersion>FS5.0</programVersion>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <platform>linux</platform>
+       <operatingSystem>Solaris 10</operatingSystem>
+      </provenanceDetail>
+      <provenanceDetail>
+       <step>2</step>
+       <process>File Format Conversion</process>
+       <package>MINC</package>
+       <program>nii2mnc</program>
+       <programVersion>MNI1.08</programVersion>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <platform>linux</platform>
+       <operatingSystem>Solaris 10</operatingSystem>
+      </provenanceDetail>
+      <provenanceDetail>
+       <step>3</step>
+       <process>Intensity Normalization</process>
+       <package>MINC</package>
+       <program>nu_correct</program>
+       <programVersion>MNI1.08</programVersion>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <platform>linux</platform>
+       <operatingSystem>Solaris 10</operatingSystem>
+      </provenanceDetail>
+      <provenanceDetail>
+       <step>4</step>
+       <process>File Format Conversion</process>
+       <package>MINC</package>
+       <program>mnc2nii</program>
+       <programVersion>MNI1.08</programVersion>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <platform>linux</platform>
+       <operatingSystem>Solaris 10</operatingSystem>
+      </provenanceDetail>
+      <provenanceDetail>
+       <step>5</step>
+       <process>Reorient</process>
+       <package>FSL</package>
+       <program>fslswapdim</program>
+       <programVersion>FSL4.1</programVersion>
+       <programParams> -x y z</programParams>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <platform>linux</platform>
+       <operatingSystem>Solaris 10</operatingSystem>
+      </provenanceDetail>
+      <provenanceDetail>
+       <step>6</step>
+       <process>Spatial Normalization</process>
+       <package>FSL</package>
+       <program>flirt</program>
+       <programVersion>FSL4.1</programVersion>
+       <programParams> -dof 6 -ref modified_Colin27</programParams>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <platform>linux</platform>
+       <operatingSystem>Solaris 10</operatingSystem>
+      </provenanceDetail>
+      <creationDate>2000-01-01</creationDate>
+      <processingInstitution>UCLA</processingInstitution>
+     </derivedProduct>
+     <relatedImageDetail>
+      <originalRelatedImage>
+       <imageUID>361517</imageUID>
+       <description>Sag IR-FSPGR</description>
+       <protocolTerm>
+        <protocol term="Acquisition Type">3D</protocol>
+        <protocol term="Weighting">T1</protocol>
+        <protocol term="Pulse Sequence">GR</protocol>
+        <protocol term="Slice Thickness">1.2</protocol>
+        <protocol term="TE">3.036</protocol>
+        <protocol term="TR">7.34</protocol>
+        <protocol term="TI">400.0</protocol>
+        <protocol term="Coil">8HRBRAIN</protocol>
+        <protocol term="Flip Angle">11.0</protocol>
+        <protocol term="Acquisition Plane">SAGITTAL</protocol>
+        <protocol term="Matrix X">256.0</protocol>
+        <protocol term="Matrix Y">256.0</protocol>
+        <protocol term="Matrix Z">196.0</protocol>
+        <protocol term="Pixel Spacing X">1.0156</protocol>
+        <protocol term="Pixel Spacing Y">1.0156</protocol>
+        <protocol term="Manufacturer">GE MEDICAL SYSTEMS</protocol>
+        <protocol term="Mfg Model">DISCOVERY MR750</protocol>
+        <protocol term="Field Strength">3.0</protocol>
+       </protocolTerm>
+      </originalRelatedImage>
+     </relatedImageDetail>
+    </seriesLevelMeta>
+   </series>
+  </study>
+ </subject>
+</project>
+</idaxs>

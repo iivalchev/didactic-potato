@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idaxs xmlns="http://ida.loni.usc.edu" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="/xsds/idaxs_2_0.xsd">
+<project xmlns="">
+ <projectIdentifier>ADNI</projectIdentifier>
+ <projectDescription>Alzheimer&#039;s Disease Neuroimaging Initiative</projectDescription>
+ <siteKey>002</siteKey>
+ <subject>
+  <subjectIdentifier>002_S_4225</subjectIdentifier>
+  <researchGroup>CN</researchGroup>
+  <subjectSex>M</subjectSex>
+  <subjectInfo item="APOE A1">3</subjectInfo>
+  <subjectInfo item="APOE A2">4</subjectInfo>
+  <visit>
+   <visitIdentifier>ADNI2 Screening MRI-New Pt</visitIdentifier>
+  </visit>
+  <study>
+   <studyIdentifier>37862</studyIdentifier>
+   <subjectAge>69.9836</subjectAge>
+   <ageQualifier>Y</ageQualifier>
+   <weightKg>91.0</weightKg>
+   <postMortem>F</postMortem>
+   <series>
+    <seriesIdentifier>122881</seriesIdentifier>
+    <modality>MRI</modality>
+    <dateAcquired>2011-09-21</dateAcquired>
+    <seriesLevelMeta>
+     <annotation>
+      <text>3D images have been aligned along the line passing through the anterior and posterior commissures of the brain (AC-PC line) using a six-parameter linear registration from the Montreal Neurological Institute (MNI) package AutoReg (version 0.98v) (www.bic.mni.mcgill.ca) and the MNI ICBM152 Nonlinear Symmetric template with 1x1x1mm voxel dimensions as the reference. Resampling was carried out with a linear transformation in AutoReg. Specific AutoReg steps: 1) minctracc âlsq6 âmi XX.mnc TEMPLATE_USED.mnc YY.xfm 2) mincresample âtransformation YY.xfm âlike TEMPLATE_USED.mnc XX.mnc XX_ACPC.mnc</text>
+     </annotation>
+     <derivedProduct>
+      <imageUID>387783</imageUID>
+      <processedDataLabel>HHP 6 DOF AC-PC registered MPRAGE</processedDataLabel>
+      <imageType>image volume</imageType>
+      <tissue>All</tissue>
+      <hemisphere>Both</hemisphere>
+      <anatomicStructure>Brain</anatomicStructure>
+      <registration>MNI152</registration>
+      <relatedImage>
+       <imageUID>257270</imageUID>
+       <relation>derived from</relation>
+      </relatedImage>
+      <provenanceDetail>
+       <step>1</step>
+       <process>Calculate Coregistration</process>
+       <package>mni_autoreg</package>
+       <program>minctracc</program>
+       <programParams>-lsq 6</programParams>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <operatingSystem>IRIX</operatingSystem>
+      </provenanceDetail>
+      <provenanceDetail>
+       <step>2</step>
+       <process>Apply Coregistration</process>
+       <package>mni_autoreg</package>
+       <program>mincresample</program>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <operatingSystem>IRIX</operatingSystem>
+      </provenanceDetail>
+      <provenanceDetail>
+       <step>3</step>
+       <process>File Format Conversion</process>
+       <program>mnc2nii</program>
+       <timestamp>2000-01-01T00:00:00</timestamp>
+       <operatingSystem>GNU Linux</operatingSystem>
+      </provenanceDetail>
+      <creationDate>2000-01-01</creationDate>
+      <processingInstitution>LENITEM, IRCCS Fatebenefratelli - Brescia (ITALY)</processingInstitution>
+     </derivedProduct>
+     <relatedImageDetail>
+      <originalRelatedImage>
+       <imageUID>257270</imageUID>
+       <description>MPRAGE</description>
+       <protocolTerm>
+        <protocol term="Acquisition Type">3D</protocol>
+        <protocol term="Weighting">T1</protocol>
+        <protocol term="Pulse Sequence">GR</protocol>
+        <protocol term="Slice Thickness">1.2</protocol>
+        <protocol term="TE">3.16</protocol>
+        <protocol term="TR">6.8054</protocol>
+        <protocol term="TI">0.0</protocol>
+        <protocol term="Coil">SENSE-Head-8</protocol>
+        <protocol term="Flip Angle">9.0</protocol>
+        <protocol term="Acquisition Plane">SAGITTAL</protocol>
+        <protocol term="Matrix X">256.0</protocol>
+        <protocol term="Matrix Y">256.0</protocol>
+        <protocol term="Matrix Z">170.0</protocol>
+        <protocol term="Pixel Spacing X">1.0</protocol>
+        <protocol term="Pixel Spacing Y">1.0</protocol>
+        <protocol term="Manufacturer">Philips Medical Systems</protocol>
+        <protocol term="Mfg Model">Intera</protocol>
+        <protocol term="Field Strength">3.0</protocol>
+       </protocolTerm>
+      </originalRelatedImage>
+     </relatedImageDetail>
+    </seriesLevelMeta>
+   </series>
+  </study>
+ </subject>
+</project>
+</idaxs>

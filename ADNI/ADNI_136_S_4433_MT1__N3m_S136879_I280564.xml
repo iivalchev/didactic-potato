@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idaxs xmlns="http://ida.loni.usc.edu" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="/xsds/idaxs_2_0.xsd">
+<project xmlns="">
+ <projectIdentifier>ADNI</projectIdentifier>
+ <projectDescription>Alzheimer&#039;s Disease Neuroimaging Initiative</projectDescription>
+ <siteKey>136</siteKey>
+ <subject>
+  <subjectIdentifier>136_S_4433</subjectIdentifier>
+  <researchGroup>CN</researchGroup>
+  <subjectSex>F</subjectSex>
+  <subjectInfo item="APOE A1">3</subjectInfo>
+  <subjectInfo item="APOE A2">4</subjectInfo>
+  <visit>
+   <visitIdentifier>ADNI2 Screening MRI-New Pt</visitIdentifier>
+  </visit>
+  <study>
+   <studyIdentifier>41753</studyIdentifier>
+   <subjectAge>76.9178</subjectAge>
+   <ageQualifier>Y</ageQualifier>
+   <weightKg>60.0</weightKg>
+   <postMortem>F</postMortem>
+   <series>
+    <seriesIdentifier>136879</seriesIdentifier>
+    <modality>MRI</modality>
+    <dateAcquired>2012-01-16</dateAcquired>
+    <seriesLevelMeta>
+     <annotation>
+      <text>Grinder Pipeline</text>
+     </annotation>
+     <derivedProduct>
+      <imageUID>280564</imageUID>
+      <processedDataLabel>MT1; N3m</processedDataLabel>
+      <imageType>image volume</imageType>
+      <tissue>All</tissue>
+      <hemisphere>Both</hemisphere>
+      <anatomicStructure>Brain</anatomicStructure>
+      <registration>native</registration>
+      <relatedImage>
+       <imageUID>278511</imageUID>
+       <relation>derived from</relation>
+      </relatedImage>
+      <provenanceDetail>
+       <step>1</step>
+       <process>N3m</process>
+       <package>Grinder Pipeline</package>
+       <program>brain_extraction2</program>
+       <programVersion>2.04</programVersion>
+       <timestamp>2012-01-17T23:30:38</timestamp>
+       <platform>Linux</platform>
+       <operatingSystem>2.6.18-164.el5</operatingSystem>
+      </provenanceDetail>
+      <creationDate>2000-01-01</creationDate>
+     </derivedProduct>
+     <relatedImageDetail>
+      <originalRelatedImage>
+       <imageUID>278511</imageUID>
+       <description>MPRAGE</description>
+       <protocolTerm>
+        <protocol term="Acquisition Type">3D</protocol>
+        <protocol term="Weighting">T1</protocol>
+        <protocol term="Pulse Sequence">GR</protocol>
+        <protocol term="Slice Thickness">1.2</protocol>
+        <protocol term="TE">3.136</protocol>
+        <protocol term="TR">6.774</protocol>
+        <protocol term="TI">0.0</protocol>
+        <protocol term="Coil">SENSE-Head-8</protocol>
+        <protocol term="Flip Angle">9.0</protocol>
+        <protocol term="Acquisition Plane">SAGITTAL</protocol>
+        <protocol term="Matrix X">256.0</protocol>
+        <protocol term="Matrix Y">256.0</protocol>
+        <protocol term="Matrix Z">170.0</protocol>
+        <protocol term="Pixel Spacing X">1.0</protocol>
+        <protocol term="Pixel Spacing Y">1.0</protocol>
+        <protocol term="Manufacturer">Philips Medical Systems</protocol>
+        <protocol term="Mfg Model">Achieva</protocol>
+        <protocol term="Field Strength">3.0</protocol>
+       </protocolTerm>
+      </originalRelatedImage>
+     </relatedImageDetail>
+    </seriesLevelMeta>
+   </series>
+  </study>
+ </subject>
+</project>
+</idaxs>

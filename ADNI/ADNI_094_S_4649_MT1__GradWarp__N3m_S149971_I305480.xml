@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idaxs xmlns="http://ida.loni.usc.edu" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="/xsds/idaxs_2_0.xsd">
+<project xmlns="">
+ <projectIdentifier>ADNI</projectIdentifier>
+ <projectDescription>Alzheimer&#039;s Disease Neuroimaging Initiative</projectDescription>
+ <siteKey>094</siteKey>
+ <subject>
+  <subjectIdentifier>094_S_4649</subjectIdentifier>
+  <researchGroup>CN</researchGroup>
+  <subjectSex>M</subjectSex>
+  <subjectInfo item="APOE A1">3</subjectInfo>
+  <subjectInfo item="APOE A2">3</subjectInfo>
+  <visit>
+   <visitIdentifier>ADNI2 Screening MRI-New Pt</visitIdentifier>
+  </visit>
+  <study>
+   <studyIdentifier>45547</studyIdentifier>
+   <subjectAge>65.526</subjectAge>
+   <ageQualifier>Y</ageQualifier>
+   <weightKg>102.058</weightKg>
+   <postMortem>F</postMortem>
+   <series>
+    <seriesIdentifier>149971</seriesIdentifier>
+    <modality>MRI</modality>
+    <dateAcquired>2012-05-10</dateAcquired>
+    <seriesLevelMeta>
+     <annotation>
+      <text>Grinder Pipeline</text>
+     </annotation>
+     <derivedProduct>
+      <imageUID>305480</imageUID>
+      <processedDataLabel>MT1; GradWarp; N3m</processedDataLabel>
+      <imageType>image volume</imageType>
+      <tissue>All</tissue>
+      <hemisphere>Both</hemisphere>
+      <anatomicStructure>Brain</anatomicStructure>
+      <registration>native</registration>
+      <relatedImage>
+       <imageUID>302926</imageUID>
+       <relation>derived from</relation>
+      </relatedImage>
+      <provenanceDetail>
+       <step>1</step>
+       <process>Gradient Unwarping</process>
+       <package>Grinder Pipeline</package>
+       <program>nifti_unwarp_resample</program>
+       <programVersion>1.0</programVersion>
+       <timestamp>2012-05-11T03:11:42</timestamp>
+       <platform>Linux</platform>
+       <operatingSystem>2.6.18-164.el5</operatingSystem>
+      </provenanceDetail>
+      <provenanceDetail>
+       <step>2</step>
+       <process>N3m</process>
+       <package>Grinder Pipeline</package>
+       <program>brain_extraction2</program>
+       <programVersion>2.04</programVersion>
+       <timestamp>2012-05-11T04:05:53</timestamp>
+       <platform>Linux</platform>
+       <operatingSystem>2.6.18-164.el5</operatingSystem>
+      </provenanceDetail>
+      <creationDate>2000-01-01</creationDate>
+     </derivedProduct>
+     <relatedImageDetail>
+      <originalRelatedImage>
+       <imageUID>302926</imageUID>
+       <description>Sag IR-SPGR</description>
+       <protocolTerm>
+        <protocol term="Acquisition Type">3D</protocol>
+        <protocol term="Weighting">T1</protocol>
+        <protocol term="Pulse Sequence">GR</protocol>
+        <protocol term="Slice Thickness">1.2</protocol>
+        <protocol term="TE">2.848</protocol>
+        <protocol term="TR">6.984</protocol>
+        <protocol term="TI">400.0</protocol>
+        <protocol term="Coil">8HRBRAIN</protocol>
+        <protocol term="Flip Angle">11.0</protocol>
+        <protocol term="Acquisition Plane">SAGITTAL</protocol>
+        <protocol term="Matrix X">256.0</protocol>
+        <protocol term="Matrix Y">256.0</protocol>
+        <protocol term="Matrix Z">196.0</protocol>
+        <protocol term="Pixel Spacing X">1.0156</protocol>
+        <protocol term="Pixel Spacing Y">1.0156</protocol>
+        <protocol term="Manufacturer">GE MEDICAL SYSTEMS</protocol>
+        <protocol term="Mfg Model">Signa HDxt</protocol>
+        <protocol term="Field Strength">3.0</protocol>
+       </protocolTerm>
+      </originalRelatedImage>
+     </relatedImageDetail>
+    </seriesLevelMeta>
+   </series>
+  </study>
+ </subject>
+</project>
+</idaxs>
