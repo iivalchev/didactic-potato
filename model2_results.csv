@@ -1,0 +1,2 @@
+model,test_loss,test_accuracy,test_precision,test_sensitivity,test_auc,TN,FP,FN,TP
+Model 2 - 3D ResNet-like MRI/PET Classifier,0.6141795516014099,0.6847826242446899,0.52173912525177,0.4000000059604645,0.6642473340034485,51,11,18,12
